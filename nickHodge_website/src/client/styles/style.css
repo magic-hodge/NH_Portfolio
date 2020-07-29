@@ -1,4 +1,5 @@
 @import "fa_icons.css";
+@import "projectStyles.css";
 
 * {
 	margin: 0px;
@@ -54,6 +55,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 10vh;
+	width: 100vw;
 }
 
 .navLinks {
@@ -96,12 +98,16 @@ nav {
 
 }
 
-.workActive {
+.projectsActive {
 
 }
 
 .miscActive {
 
+}
+
+.activePage {
+	color: #092b43;
 }
 
 .homeImage {
@@ -164,19 +170,13 @@ nav {
 	text-align: left;
 }
 
-.skylineImg {
-	width:;
-}
-
 .contactMe {
 	width: 50%;
 	margin: 0px auto;
-}
-
-.contactMe {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #d2e9f9
 }
 
 .contactButton {
@@ -199,4 +199,28 @@ nav {
 
 .footerLinks {
 	font-size: 2.25vh;
+}
+
+.homeButton:hover {
+	box-shadow: 5px;
+	transition: 0.5s ease;
+}
+
+/* Media queries for smaller screens. */
+@media screen and (max-width: 1024px) {
+	.profile,
+	.skillRow,
+	.projectText,
+	.contactMe  {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profile,
+	.skillRow,
+	.projectText,
+	.contactMe  {
+		width: 85%;
+	}
 }
